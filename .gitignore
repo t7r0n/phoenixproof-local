@@ -1,0 +1,12 @@
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.pyc
+*.egg-info/
+runs/
+outputs/
+data/
+.phoenixproof.lock
+.DS_Store
+

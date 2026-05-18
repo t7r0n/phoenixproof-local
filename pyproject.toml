@@ -1,0 +1,29 @@
+[project]
+name = "phoenixproof-local"
+version = "0.1.0"
+description = "Offline cross-vertical safety benchmark for AI care conversations."
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.4.2",
+  "jinja2>=3.1.6",
+  "pydantic>=2.12.4",
+  "rich>=14.2.0",
+  "typer>=0.20.0",
+]
+
+[project.scripts]
+phoenixproof-local = "phoenixproof_local.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.1",
+  "ruff>=0.14.6",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.0,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 120
+
